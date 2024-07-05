@@ -1,4 +1,4 @@
-# Supermarket Website Template
+# Supermarket Website
 
 ## Overview
 
