@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: rgba(0,0,0,0.2);
+    color: black;
+}
+
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    height: 100px;
+}
+.logo:hover{
+    transform: scale(1.4);
+}
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.bottom-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 0;
+}
+
+.nav-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.nav-button:hover {
+    transform: scale(1.1);
+    background-color: #666;
+}
+
+.search-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-section input[type="text"],
+.search-section button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.submenu-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submenu-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.submenu-nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+}
+
+.submenu-nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.submenu-nav ul li a:hover {
+    background-color: #ddd;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 120px;
+}
+
+.submenu a {
+    color: #333;
+    padding: 10px 20px;
+    display: block;
+}
+
+.submenu-nav ul li:hover .submenu {
+    display: block;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.card-content p {
+    color: #666;
+}
+
+.card-content button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-content button:hover {
+    background-color: red;
+}
+
+.promotions-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.promotions-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.promotion-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.promotion-buttons button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.promotion-buttons button i {
+    margin-right: 10px;
+}
+
+.promotion-buttons button:hover {
+    transform: scale(1.1);
+    background-color: #666;
+}
+
+.newsletter-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.newsletter-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 250px;
+}
+
+.newsletter-form button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 4px 4px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #666;
+}
+footer {
+    background-color: white;
+    color: black;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-part {
+    flex: 1; /* Each part takes equal space */
+    margin: 0 10px; /* Adjust margin as needed */
+    text-align: center; /* Center-align content */
+}
+
+.footer-part h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-part ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-part ul li {
+    margin-bottom: 5px;
+}
+
+.footer-part p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.footer-part i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
